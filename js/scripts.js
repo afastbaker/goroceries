@@ -9,9 +9,11 @@ $(document).ready(function() {
 
     items.forEach(function(item) {
       upperItems.push(item.toUpperCase)
-    });
+
     var sortItems = upperItems.sort()
-      $("#list").append('<li>' + items + '</li>');
+      $("#list").append('<li>' + item + '</li>');
+      $('form').hide();
       event.preventDefault();
+    });
   });
 });
